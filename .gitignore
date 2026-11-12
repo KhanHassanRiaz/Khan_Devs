@@ -1,0 +1,10 @@
+# Local-only files that should not be published
+important commands.txt
+temp_layout.html
+
+# OS / editor junk
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
