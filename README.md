@@ -2,8 +2,8 @@
 
 Static website for KhanDevs, hosted with GitHub Pages.
 
-- **Live site:** https://www.khandev.me
-- **Custom domain:** `www.khandev.me` (see `CNAME`)
+- **Live site:** https://khandev.me
+- **Custom domain:** `khandev.me` (see `CNAME`; `www.khandev.me` also resolves to the site)
 - **Branch:** `main` (repo root is published directly, no build step)
 
 ## Pages
