@@ -5,9 +5,9 @@ const THEME_STORAGE_KEY = "khandevs-theme";
 const RELEASES_CONFIG = {
   "proquiz-simulator": {
     apiUrl:
-      "https://api.github.com/repos/KhanHassanRiaz/ProQuiz-Simulator-updater/releases/latest",
+      "https://api.github.com/repos/KhanHassanRiaz/ProQuiz_Simulator/releases/latest",
     pageUrl:
-      "https://github.com/KhanHassanRiaz/ProQuiz-Simulator-updater/releases/latest",
+      "https://github.com/KhanHassanRiaz/ProQuiz_Simulator/releases/latest",
     fallbackName: "proquiz-latest",
   },
   "pro-typing-master": {
