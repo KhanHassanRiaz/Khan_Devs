@@ -1,6 +1,7 @@
 const PROQUIZ_DETAILS_PAGE = "proquiz-simulator.html";
 const PRO_TYPING_MASTER_DETAILS_PAGE = "pro-typing-master.html";
 const PRO_TYPING_ASSISTANT_DETAILS_PAGE = "protyping-assistant.html";
+const ACCESSIBLE_DATE_PICKER_DETAILS_PAGE = "accessible-date-picker.html";
 const THEME_STORAGE_KEY = "khandevs-theme";
 const RELEASES_CONFIG = {
   "proquiz-simulator": {
@@ -25,6 +26,13 @@ const RELEASES_CONFIG = {
       apiUrl: "https://api.github.com/repos/Merry-ai/nvda-thesaurus/releases/latest",
       pageUrl: "https://github.com/Merry-ai/nvda-thesaurus/releases/latest",
       fallbackName: "nvda-thesaurus-latest",
+    },
+    "accessible-date-picker": {
+      apiUrl:
+        "https://api.github.com/repos/KhanHassanRiaz/accessible-date-picker/releases/latest",
+      pageUrl:
+        "https://github.com/KhanHassanRiaz/accessible-date-picker/releases/latest",
+      fallbackName: "accessible-date-picker-latest",
     },
 };
 const SOFTWARE_CATALOG = [
@@ -110,6 +118,30 @@ const SOFTWARE_CATALOG = [
     ],
     logo: "",
     url: "synonyms-and-antonyms.html",
+    status: "available",
+    featured: true,
+  },
+  {
+    id: "accessible-date-picker",
+    name: "Accessible Date Picker",
+    description:
+      "A Chrome extension that makes date pickers and calendar interfaces on the web easy to use with a keyboard and a screen reader.",
+    categories: ["chrome"],
+    keywords: [
+      "date picker",
+      "date",
+      "date of birth",
+      "dob",
+      "calendar",
+      "chrome extension",
+      "screen reader",
+      "nvda",
+      "accessibility",
+      "forms",
+      "keyboard",
+    ],
+    logo: "icon_adp.png",
+    url: ACCESSIBLE_DATE_PICKER_DETAILS_PAGE,
     status: "available",
     featured: true,
   },
@@ -679,7 +711,7 @@ function initSoftwareSearch() {
     const initialCategory = normalizeSearchText(params.get("category") || "all");
 
     queryInput.value = initialQuery;
-    if (["all", "windows", "android"].includes(initialCategory)) {
+    if (["all", "windows", "android", "chrome"].includes(initialCategory)) {
       categoryInput.value = initialCategory;
     } else {
       categoryInput.value = "all";

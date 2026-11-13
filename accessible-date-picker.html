@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Accessible Date Picker by Khan Hassan Riaz. Download the latest Chrome extension release and fill date pickers and date of birth fields with a keyboard and screen reader."
+    />
+    <meta
+      name="keywords"
+      content="Accessible Date Picker, date picker, screen reader, NVDA, JAWS, Chrome extension, date of birth, accessible forms, Khan Hassan Riaz"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Accessible Date Picker | KhanDevs" />
+    <meta
+      property="og:description"
+      content="A Chrome extension that makes date pickers and calendar interfaces on the web easy to use with a keyboard and a screen reader."
+    />
+    <meta property="og:url" content="accessible-date-picker.html" />
+    <meta property="og:site_name" content="KhanDevs" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Accessible Date Picker | KhanDevs" />
+    <meta
+      name="twitter:description"
+      content="A Chrome extension that makes date pickers and calendar interfaces on the web easy to use with a keyboard and a screen reader."
+    />
+    <title>Accessible Date Picker | KhanDevs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-65MZ38PC4F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-65MZ38PC4F');
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="ambient" aria-hidden="true"></div>
+
+    <div class="greeting-strip">
+      <div class="greeting-inner container">
+        <p id="greeting-text" role="status" aria-live="polite">Good Day, welcome to Accessible Date Picker.</p>
+        <button id="theme-toggle" class="ghost-btn" type="button" aria-pressed="false">
+          <span id="theme-toggle-label">Dark Mode</span>
+        </button>
+        <span id="theme-status" class="visually-hidden" role="status" aria-live="polite">
+          Currently in light mode.
+        </span>
+      </div>
+    </div>
+
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="KhanDevs home">
+          <img class="brand-logo" src="khandevs-logo.svg" alt="" aria-hidden="true" />
+          <span class="brand-name">KhanDevs</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-nav-adp"
+          data-nav-toggle
+        >
+          &#9776;
+        </button>
+
+        <nav id="primary-nav-adp" aria-label="Primary navigation" data-nav-panel>
+          <p class="menu-heading">Main Menu</p>
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#trending">Trending</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="index.html#company">Company</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="section container" id="adp-details" aria-labelledby="adp-title">
+        <div class="section-heading">
+          <p class="eyebrow">Product Details</p>
+          <h1 id="adp-title">Accessible Date Picker</h1>
+          <p class="product-mini-meta">
+            Developed by: Khan Hassan Riaz | Built for: Keyboard and screen reader users
+          </p>
+        </div>
+        <img class="software-logo software-logo-large" src="icon_adp.png" alt="Accessible Date Picker logo" />
+
+        <div class="share-panel" aria-label="Share Accessible Date Picker page">
+          <button class="share-btn" type="button" data-share-page>
+            Share Accessible Date Picker
+          </button>
+          <p class="share-note">
+            Share this page with screen reader users and anyone who struggles with date pickers on the web.
+          </p>
+          <p class="share-feedback" data-share-feedback aria-live="polite"></p>
+        </div>
+
+        <article class="detail-card" aria-label="Detailed Accessible Date Picker information">
+          <div class="detail-content">
+            <h2>Accessible Date Picker: Fill Any Date Field With Confidence</h2>
+            <p>
+              Date of birth fields, flight and hotel bookings, exam application forms: almost every
+              important online form asks for a date, and very often the only way to enter it is a
+              calendar widget that a screen reader cannot read and a keyboard cannot reach. I built
+              Accessible Date Picker to remove that barrier. It is a Chrome extension designed to
+              improve the accessibility of date pickers and calendar interfaces on websites, making
+              online forms and job application processes easier to navigate for keyboard and screen
+              reader users.
+            </p>
+
+            <h2>The Problem It Solves:</h2>
+            <p>
+              Many websites use calendar widgets that were never designed with assistive technology
+              in mind. Some grids are invisible to the screen reader, some cannot be operated with
+              the arrow keys, and some bury the year selector where it is nearly impossible to find.
+              The result is that a blind or visually impaired user can fill an entire application
+              form, then get stuck at the date of birth field.
+            </p>
+            <p>
+              Accessible Date Picker solves this by opening its own plain, fully keyboard operable
+              dialog with Day, Month, and Year lists. You choose the date in a dialog your screen
+              reader understands, and the extension writes that date back into the website's own
+              field or calendar. It works with the keyboard alone, it verifies what the page
+              actually contains after every write, and it announces the real field value. It never
+              guesses between an ambiguous day and month, and it makes no network requests and
+              stores no dates.
+            </p>
+
+            <h2>How to Use Accessible Date Picker</h2>
+            <p>
+              Getting a date into a stubborn form takes only a few steps.
+            </p>
+            <ul class="feature-list">
+              <li>Put keyboard focus in a date field. Focus may also be on a calendar button that controls a nearby date field.</li>
+              <li>Press Alt+Shift+D, or click the Accessible Date Picker toolbar button.</li>
+              <li>The dialog opens with Day, Month, and Year lists. The day list is focused first.</li>
+              <li>Choose the date. The day list adjusts automatically when a month or year has fewer days, so February the thirtieth is never possible.</li>
+              <li>Press Enter or choose Apply.</li>
+            </ul>
+            <p>
+              The extension then announces the result. For example, it says "Date set: 10/06/2026."
+              and includes the exact text now in the field. If the site rejects or rewrites the
+              value, the extension reports the failure instead of claiming success. Press Escape or
+              choose Cancel to close the dialog without changing the field, and focus returns to
+              the field or calendar button that had it before. The dialog keeps Tab and Shift+Tab
+              inside its own controls, and result messages are announced and kept available for
+              about ten seconds.
+            </p>
+            <p>
+              To change the keyboard shortcut, open the extension options and choose Open Chrome
+              keyboard shortcuts, or visit chrome://extensions/shortcuts. Chrome controls shortcut
+              assignment.
+            </p>
+
+            <h2>How Dates Are Set</h2>
+            <p>
+              When you apply a date, the extension tries four layers in order and stops at the
+              first one that verifies correctly.
+            </p>
+            <ul class="feature-list">
+              <li>Native input. If the field is an input type="date" or input type="month", the extension sets its value directly.</li>
+              <li>Site calendar driver. It looks for an open or openable calendar near the field, reads the visible month and year, changes the controls, clicks the correct day, and checks the field afterwards. It waits for calendar animations to settle, and it has a twenty-second and forty-step budget so it cannot loop forever.</li>
+              <li>Library adapter. It detects jQuery UI datepicker, bootstrap-datepicker, flatpickr, Pikaday, and Zebra DatePicker, then calls the library's own public API.</li>
+              <li>Direct write. If the field's format can be proven from its current value, placeholder, a format attribute, accessible text, library configuration, or another date field on the page, the extension writes a formatted value and dispatches the usual input and change events.</li>
+            </ul>
+            <p>
+              After every layer the extension reads the field again. If the value does not match
+              the requested date, it tries the next layer. The final check happens after focus
+              returns to the field, so a late site script cannot silently replace the date.
+            </p>
+
+            <h2>Dependent Fields Still Update</h2>
+            <p>
+              Some sites calculate another field from the date only inside their calendar widget's
+              own change or close callback. An age field derived from a date of birth is a common
+              example, and writing a value straight into the input would leave it empty. Because
+              the site calendar driver clicks the widget's real controls, and the library adapters
+              call the library's own selection methods, the site's callbacks run as they do for a
+              sighted user. The extension updates as much of the page as the widget itself does,
+              and it still checks the date field afterwards and reports the value the page
+              contains.
+            </p>
+
+            <h2>No Guessing With Ambiguous Dates</h2>
+            <p>
+              A value such as 03/04/2026 does not say whether the third of April or the fourth of
+              March is meant. Unless a placeholder, attribute, library setting, learned format, or
+              another field proves the order, the extension refuses to write. It announces "I could
+              not find the date format for this field, so I did not enter a date." and leaves the
+              field unchanged. Your date is never written into the wrong slot.
+            </p>
+
+            <h2>Key Features</h2>
+            <ul class="feature-list">
+              <li>Keyboard-first dialog: Day, Month, and Year lists that any screen reader can use, with a focus trap and visible focus outlines.</li>
+              <li>Verified writes: after every attempt the extension reads the field back and announces the real result, never a claim that was not checked.</li>
+              <li>Smart calendar control: it can drive the site's own calendar, including calendars built with jQuery UI, bootstrap-datepicker, flatpickr, Pikaday, and Zebra DatePicker.</li>
+              <li>Dependent field support: age fields and other values calculated from the date update, because the site's own callbacks run.</li>
+              <li>Ambiguity protection: it refuses to write when the day and month order cannot be proven, instead of guessing.</li>
+              <li>Learned formats: after a verified success it may remember the date pattern for that site, storing only the pattern and never the date itself.</li>
+              <li>Diagnostic report: a Copy diagnostic report button produces a plain-text, sanitized report of the field, the calendar, and every step tried, to help when a site refuses a date. It is only copied when you ask, and it is never sent anywhere.</li>
+              <li>Accessible presentation: the dialog supports dark mode, forced-colors mode, and reduced motion, and announcements use separate polite and assertive live regions.</li>
+              <li>Adjustable options: choose the earliest year from 1900 to 2100, the number of future years from 0 to 200, and forget learned formats at any time.</li>
+              <li>Private by design: no network requests, no remote code, no analytics, no telemetry, and no stored dates.</li>
+            </ul>
+
+            <h2>What Is Supported and What Is Not</h2>
+            <p>
+              The extension supports input elements of type text, search, date, and month, open
+              shadow roots, same-origin iframes, read-only text fields, and sites that reject
+              values, move focus, or reformat the field. It reports what actually happened in every
+              case. It does not support closed shadow roots, calendars drawn only on a canvas or
+              image with no readable controls, custom widgets that expose no input field or grid
+              cells, non-input fields such as textareas or contenteditable elements, dates that
+              remain ambiguous after all format clues are checked, or month names other than
+              English. Chrome internal pages and the Chrome Web Store are not accessible to
+              extensions, and file URLs need Allow access to file URLs enabled on
+              chrome://extensions. Chrome 102 or newer is required.
+            </p>
+
+            <h2>How to Install</h2>
+            <p>
+              The extension installs in about a minute using Chrome's developer mode.
+            </p>
+            <ul class="feature-list">
+              <li>Download the latest zip with the button below and unzip it anywhere you like.</li>
+              <li>Open chrome://extensions in Chrome.</li>
+              <li>Turn on Developer mode.</li>
+              <li>Choose Load unpacked and select the unzipped folder.</li>
+              <li>Optionally pin the Accessible Date Picker button to the toolbar.</li>
+            </ul>
+            <p>
+              Unpacked extensions are not updated automatically: when a new release appears,
+              download and unzip it and load the new folder. Chrome shows a standard developer-mode
+              warning for unpacked extensions, which is expected.
+            </p>
+
+            <h2>Privacy and Permissions</h2>
+            <p>
+              The extension uses the activeTab permission for temporary access to the page where
+              you invoked it, the scripting permission to inject the content script on demand, and
+              the storage permission for local settings and learned format patterns only. No date
+              value is ever written to extension storage. The production manifest requests no host
+              permissions at all, and the diagnostic report is copied to the clipboard only when
+              you press its button.
+            </p>
+          </div>
+
+          <div class="downloads-stack">
+            <h2 class="downloads-title">Download Accessible Date Picker</h2>
+            <a
+              id="adp-chrome-download"
+              class="download-btn"
+              data-release-download="accessible-date-picker"
+              data-platform="windows"
+              href="https://github.com/KhanHassanRiaz/accessible-date-picker/releases/latest"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download Accessible Date Picker for Chrome
+            </a>
+            <p
+              class="release-status is-hidden"
+              data-release-status="accessible-date-picker"
+              aria-live="polite"
+            ></p>
+            <p class="share-note">
+              You will always get the latest release as a zip. Unzip it and load it as an unpacked
+              extension in Chrome.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="products.html">Our Products</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <p>&copy; 2026 KhanDevs. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
