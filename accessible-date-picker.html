@@ -144,28 +144,26 @@
 
             <h2>How to Use Accessible Date Picker</h2>
             <p>
-              Getting a date into a stubborn form takes only a few steps.
+              Using the extension takes only a few steps. Just follow them in order, and you will
+              have your date in the form in under a minute.
             </p>
             <ul class="feature-list">
-              <li>Put keyboard focus in a date field. Focus may also be on a calendar button that controls a nearby date field.</li>
-              <li>Press Alt+Shift+D, or click the Accessible Date Picker toolbar button.</li>
-              <li>The dialog opens with Day, Month, and Year lists. The day list is focused first.</li>
-              <li>Choose the date. The day list adjusts automatically when a month or year has fewer days, so February the thirtieth is never possible.</li>
-              <li>Press Enter or choose Apply.</li>
+              <li>Step 1: Open the website's form and click into the date field with your mouse, or reach it with the Tab key. Make sure the keyboard cursor is sitting inside the field, for example a date of birth box. You can also start from the calendar button that opens the date picker, if the field has one.</li>
+              <li>Step 2: Press Alt+Shift+D. To do this, hold the Alt key and the Shift key together, then press D. Alternatively, click the Accessible Date Picker button in the Chrome toolbar.</li>
+              <li>Step 3: A small dialog opens with three lists: Day, Month, and Year. The Day list is ready first, so simply pick the day you want.</li>
+              <li>Step 4: Now choose the Month and the Year in the same way. The list of days always matches the month and year, so an impossible date such as February the thirtieth can never be picked by mistake.</li>
+              <li>Step 5: Press Enter, or choose the Apply button.</li>
             </ul>
             <p>
               The extension then announces the result. For example, it says "Date set: 10/06/2026."
-              and includes the exact text now in the field. If the site rejects or rewrites the
-              value, the extension reports the failure instead of claiming success. Press Escape or
-              choose Cancel to close the dialog without changing the field, and focus returns to
-              the field or calendar button that had it before. The dialog keeps Tab and Shift+Tab
-              inside its own controls, and result messages are announced and kept available for
-              about ten seconds.
+              and includes the exact text now in the field. If a website refuses the date, the
+              extension tells you that instead of claiming success.
             </p>
             <p>
-              To change the keyboard shortcut, open the extension options and choose Open Chrome
-              keyboard shortcuts, or visit chrome://extensions/shortcuts. Chrome controls shortcut
-              assignment.
+              Changed your mind before applying? Press Escape or choose Cancel, and nothing on the
+              page is touched while your focus goes back where it was. To change the keyboard
+              shortcut, open the extension options and choose Open Chrome keyboard shortcuts, or
+              visit chrome://extensions/shortcuts.
             </p>
 
             <h2>How Dates Are Set</h2>
@@ -185,27 +183,6 @@
               returns to the field, so a late site script cannot silently replace the date.
             </p>
 
-            <h2>Dependent Fields Still Update</h2>
-            <p>
-              Some sites calculate another field from the date only inside their calendar widget's
-              own change or close callback. An age field derived from a date of birth is a common
-              example, and writing a value straight into the input would leave it empty. Because
-              the site calendar driver clicks the widget's real controls, and the library adapters
-              call the library's own selection methods, the site's callbacks run as they do for a
-              sighted user. The extension updates as much of the page as the widget itself does,
-              and it still checks the date field afterwards and reports the value the page
-              contains.
-            </p>
-
-            <h2>No Guessing With Ambiguous Dates</h2>
-            <p>
-              A value such as 03/04/2026 does not say whether the third of April or the fourth of
-              March is meant. Unless a placeholder, attribute, library setting, learned format, or
-              another field proves the order, the extension refuses to write. It announces "I could
-              not find the date format for this field, so I did not enter a date." and leaves the
-              field unchanged. Your date is never written into the wrong slot.
-            </p>
-
             <h2>Key Features</h2>
             <ul class="feature-list">
               <li>Keyboard-first dialog: Day, Month, and Year lists that any screen reader can use, with a focus trap and visible focus outlines.</li>
@@ -220,35 +197,29 @@
               <li>Private by design: no network requests, no remote code, no analytics, no telemetry, and no stored dates.</li>
             </ul>
 
-            <h2>What Is Supported and What Is Not</h2>
-            <p>
-              The extension supports input elements of type text, search, date, and month, open
-              shadow roots, same-origin iframes, read-only text fields, and sites that reject
-              values, move focus, or reformat the field. It reports what actually happened in every
-              case. It does not support closed shadow roots, calendars drawn only on a canvas or
-              image with no readable controls, custom widgets that expose no input field or grid
-              cells, non-input fields such as textareas or contenteditable elements, dates that
-              remain ambiguous after all format clues are checked, or month names other than
-              English. Chrome internal pages and the Chrome Web Store are not accessible to
-              extensions, and file URLs need Allow access to file URLs enabled on
-              chrome://extensions. Chrome 102 or newer is required.
-            </p>
-
             <h2>How to Install</h2>
             <p>
-              The extension installs in about a minute using Chrome's developer mode.
+              You only install the extension once, and it takes about two minutes. Follow these
+              steps in order and you cannot go wrong.
             </p>
             <ul class="feature-list">
-              <li>Download the latest zip with the button below and unzip it anywhere you like.</li>
-              <li>Open chrome://extensions in Chrome.</li>
-              <li>Turn on Developer mode.</li>
-              <li>Choose Load unpacked and select the unzipped folder.</li>
-              <li>Optionally pin the Accessible Date Picker button to the toolbar.</li>
+              <li>Step 1: Click the Download Accessible Date Picker button below. The latest zip file will be downloaded to your computer.</li>
+              <li>Step 2: Find the downloaded zip file, right-click it, and choose Extract All. Remember the folder where you extracted it, for example your Downloads folder.</li>
+              <li>Step 3: Now open Google Chrome and go to the extension management page. Type chrome://extensions in the address bar and press Enter. If you prefer the menus, press Alt to open the Chrome menu, then find Extensions and choose Manage Extensions. Both ways land on the same page.</li>
+              <li>Step 4: On that page, find the Developer mode switch and make sure it is turned on. It is usually in the top right corner.</li>
+              <li>Step 5: Once Developer mode is on, new buttons appear. Click the Load unpacked button.</li>
+              <li>Step 6: In the folder picker, select the folder you extracted in Step 2 and click Select Folder.</li>
+              <li>Step 7: That is it. The extension is installed and ready to use.</li>
             </ul>
             <p>
-              Unpacked extensions are not updated automatically: when a new release appears,
-              download and unzip it and load the new folder. Chrome shows a standard developer-mode
-              warning for unpacked extensions, which is expected.
+              For quick access, click the puzzle piece icon in the Chrome toolbar and pin Accessible
+              Date Picker, so its button is always one click away.
+            </p>
+            <p>
+              Two small notes: Chrome 102 or newer is required. Unpacked extensions are not updated
+              automatically, so when a new release appears, download and unzip it and load the new
+              folder the same way. Chrome also shows a standard developer-mode warning for unpacked
+              extensions, which is expected and safe.
             </p>
 
             <h2>Privacy and Permissions</h2>
